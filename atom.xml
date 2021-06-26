@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yfnotes.now.sh</id>
-    <title>粟一笔记站</title>
-    <updated>2020-06-27T13:42:28.158Z</updated>
+    <title>粟一笔记</title>
+    <updated>2021-06-26T09:54:09.473Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://yfnotes.now.sh"/>
     <link rel="self" href="https://yfnotes.now.sh/atom.xml"/>
-    <subtitle>温故而知新</subtitle>
+    <subtitle>你我皆星尘</subtitle>
     <logo>https://yfnotes.now.sh/images/avatar.png</logo>
     <icon>https://yfnotes.now.sh/favicon.ico</icon>
-    <rights>All rights reserved 2020, 粟一笔记站</rights>
+    <rights>All rights reserved 2021, 粟一笔记</rights>
     <entry>
         <title type="html"><![CDATA[笔记的重要性]]></title>
         <id>https://yfnotes.now.sh/9/</id>
