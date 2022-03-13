@@ -2,14 +2,14 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yfnotes.now.sh</id>
     <title>粟一笔记</title>
-    <updated>2021-06-26T10:29:04.036Z</updated>
+    <updated>2022-03-13T14:12:14.584Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://yfnotes.now.sh"/>
     <link rel="self" href="https://yfnotes.now.sh/atom.xml"/>
-    <subtitle>你我皆星尘</subtitle>
+    <subtitle>我用一首歌穿越宇宙</subtitle>
     <logo>https://yfnotes.now.sh/images/avatar.png</logo>
     <icon>https://yfnotes.now.sh/favicon.ico</icon>
-    <rights>All rights reserved 2021, 粟一笔记</rights>
+    <rights>All rights reserved 2022, 粟一笔记</rights>
     <entry>
         <title type="html"><![CDATA[年轻时]]></title>
         <id>https://yfnotes.now.sh/8/</id>
