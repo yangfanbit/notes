@@ -1,54 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yfnotes.now.sh</id>
-    <title>粟一笔记</title>
-    <updated>2022-03-13T14:12:14.584Z</updated>
+    <title>Notes</title>
+    <updated>2022-03-14T17:29:46.467Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://yfnotes.now.sh"/>
     <link rel="self" href="https://yfnotes.now.sh/atom.xml"/>
     <subtitle>我用一首歌穿越宇宙</subtitle>
     <logo>https://yfnotes.now.sh/images/avatar.png</logo>
     <icon>https://yfnotes.now.sh/favicon.ico</icon>
-    <rights>All rights reserved 2022, 粟一笔记</rights>
-    <entry>
-        <title type="html"><![CDATA[年轻时]]></title>
-        <id>https://yfnotes.now.sh/8/</id>
-        <link href="https://yfnotes.now.sh/8/">
-        </link>
-        <updated>2020-06-16T12:04:40.000Z</updated>
-        <summary type="html"><![CDATA[<p><strong>没有人永远年轻，但永远有人年轻着</strong>，而大家年轻时曾遇到的问题，往往也是大同小异的，诚然有的问题并非年轻人所有，但更容易在年轻人身上体现，谨摘录部分内容如下：</p>
-]]></summary>
-        <content type="html"><![CDATA[<p><strong>没有人永远年轻，但永远有人年轻着</strong>，而大家年轻时曾遇到的问题，往往也是大同小异的，诚然有的问题并非年轻人所有，但更容易在年轻人身上体现，谨摘录部分内容如下：</p>
-<!-- more -->
-<ol>
-<li><strong>年轻时怕辛苦，怕难题</strong>。但这最不应该，因为精力充沛，可塑性强，负担不重。难事都学得会，压力都挺得住。年纪稍大，家累俗事太多，更难学新本领干大事。一不要太计较物质，看得远一点，物质容易有，没本事就没有。二培养韧性，干事有耐心，将来受用。杜荀鹤有诗：“<strong>少年辛苦终身事，莫向光阴惰寸功</strong>。”<br>
- </li>
-<li><strong>年轻时总要凑热闹，大家混在一起才觉得踏实</strong>。太希望有别人照顾，有别人倾诉，总要把自己的一切和人分享。人应该融入社会，但不必每时每刻和人在一起。自己体会世界和人生，保持有单独的时间，心里会更通透。古语说：“<strong>听静夜之钟声，唤醒梦中之梦。观澄谭之月影，窥见身外之身</strong>。”间离点学会感受内心。<br>
- </li>
-<li><strong>年轻时初见一人，初遇一事，佩服到五体投地，崇拜到一塌糊涂</strong>。初见异性，惊为天人，愿意付出一切。初次出国，觉得如天堂。但处长了，就知道人难缠，事麻烦。因为见得少，又不善于识别忽悠和表演，难免专吃表面的一套。<strong>一稍克制热情，二稍有分析能力</strong>。古语说：“<strong>寻常相见了，犹道不如初</strong>。”<br>
- </li>
-<li><strong>年轻时不易集中精力</strong>。<strong>一是诱惑太多，朋友拉去玩，自己想着混，一下子就是一天。二是目标太多，一会想这样来得快，那样适合我，最后都没落实</strong>。一要目标切实有可能性和具体路径。二长期目标需要短期计划，限时完成。否则就是空的。古语说：“<strong>人若志趣不远，心不在焉，虽学无成</strong>。”趁年轻从一个方向突破。<br>
- </li>
-<li><strong>年轻时没经过事，有麻烦往极端想</strong>。越挣扎越糟。如失恋后想报复或自杀，欠人钱还不上就诈骗。大问题可能就是小事一桩。真是大事也总有办法。古语说：“<strong>事到万难处，最容易忍心害理，一变而出下策。到这关头，只有咬定牙根，不可放松一线，不可着急一步，缓缓挨过去，便是坦途矣</strong>。”打不垮就是关键素质。<br>
- </li>
-<li><strong>年轻时已需要为自己的行为负责</strong>。常以为还是孩子，可以随便行事，胡乱相信一些不相干不靠谱的人，以为像小时候父母兜下来一样，总会有人兜。其实在大学或工作单位，别人都把你当做成年人看待的。言行都需要自己负责。网上无所谓，不能总在现实中耍宝卖萌瞎起哄。古语说：“<strong>持身不可轻</strong>。”<br>
- </li>
-<li><strong>年轻时不知道自己的事情后果自己承担</strong>。<strong>别人的话只能是参考</strong>。听谁的话，错了他都不给你兜。出主意的从来有两种：一种好心，但最后不为后果负责。如当年李德为红军出主意。另一种深心，最后是你活该，如当年萨克斯为苏联出主意。古语说：“<strong>谋无主则困</strong>。”虚心听意见，明白什么对你有利，大主意自己拿。<br>
- </li>
-<li><strong>年轻时最不喜欢肯定别人，总是挑毛病</strong>。朋友的衣服配得不好看，同事的举止有问题，客户抠门不大方。别人顺利是溜须拍马潜规则，别人失败是自取其辱该倒霉。和这个人吃饭议论那个，和那个在一起议论这个，没一个顺眼。学会与人为善，一和人交往气氛好，二周围人也注意你长处。古语说：“<strong>君子扬人之善</strong>。”<br>
- </li>
-<li><strong>年轻时觉得朋友间毫不拘礼</strong>。其实有忌讳：一<strong>不应该拿敏感的事宣扬嘲笑</strong>。如追求女友被耍的蠢相，被人戏弄的笨相，好色好财的傻相。二<strong>不应该拿不好生活习惯四处传播</strong>，如不爱洗脚，不换衣服等。古语说：“<strong>与人相处，虽贵情投意合，亦不可狎昵太甚。笑语戏谑之际，必当有节</strong>。”好要顾及对方感受，都有感觉。<br>
- </li>
-<li><strong>年轻时最难的是不着急</strong>。刚进了公司单位，看到表面势力大的，就唯恐错过好机会。发现别人已经在前边，只有跳得更高。这有可能就是陷阱，被利用。也有可能已经是红海，你不过是小数点后面的。一看什么适合自己，找到最能发挥的领域。二看长期趋势，找对大方向。古语说：“<strong>藏器于身，待时而动</strong>。”<br>
- <br>
- </li>
-</ol>
-<p><strong>年轻时一定不能被小事细节纠缠住</strong>。<br>
-一是<strong>没有意义的事</strong>占据了主要时间，如和同宿舍同学矛盾，和家里怄气，都徒然绕进去做无用功。<br>
-二是<strong>无事忙的凑热闹</strong>，什么都要插一脚，都不舍得放弃。最后什么也抓不住留不下。<br>
-一永远<strong>先抓主要的</strong>。二<strong>坚决按计划做事</strong>。古语说；“<strong>曲思于细者必忘其大，锐精于近者必略其远</strong>。”</p>
-]]></content>
-    </entry>
+    <rights>All rights reserved 2022, Notes</rights>
     <entry>
         <title type="html"><![CDATA[我为什么反对同理心]]></title>
         <id>https://yfnotes.now.sh/7/</id>
