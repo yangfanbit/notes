@@ -1,86 +1,120 @@
-<!DOCTYPE html>
 <html>
-
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
 <title>我为什么反对同理心 | Notes</title>
-<link rel="shortcut icon" href="https://yfnotes.now.sh/favicon.ico">
-<link href="https://yfnotes.now.sh/styles/main.css" rel="stylesheet">
-<link href="//at.alicdn.com/t/font_1678829_7cn41ho9lyt.css" rel="stylesheet">
-<link rel="alternate" type="application/rss+xml" title="Notes » Feed" href="https://yfnotes.now.sh/atom.xml">
-        <meta name="description" content="文/Paul Bloom
 
-有时候在社交场合朋友们出于礼貌会问我最近在干什么。我说：“我在写书。”出于礼貌他们又问我：“是什么题目的书呢？”我说：“题目是同理心。”我注意到每每当我提到这个题目的时候，他们的脸上都会挂起笑容，似乎这是一个很令..." />
-        <meta name="keywords" content="心理" />
+<link rel="shortcut icon" href="https://yfnotes.now.sh/favicon.ico?v=1647759784404">
+
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://yfnotes.now.sh/styles/main.css">
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css"> -->
+
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/9.12.0/languages/dockerfile.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/9.12.0/languages//dart.min.js"></script>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script> -->
+<!-- DEMO JS -->
+<!--<script src="media/scripts/index.js"></script>-->
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.css">
 </head>
-
 <body>
-    <div class="main animated">
-        <div class="header animated fadeInDown">
-    <div class="site_title_container">
-        <div class="site_title">
-            <a href="https://yfnotes.now.sh">Notes</a>
+<div class="main gt-bg-theme-color-first">
+    <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="/">
+        <img class="user-avatar" src="/images/avatar.png" alt="头像">
+        <div class="site-name gt-c-content-color-first">
+            Notes
         </div>
-    </div>
-    <div class="my_socials">
-        
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="changeNavbar">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
             
-                <a href="https://github.com/yangfanbit" target="_blank"><i class="iconfont icon-github"></i></a>
+            <div class="nav-item">
+                
+                <a href="/" class="menu gt-a-link">
+                    摘录
+                </a>
+                
+            </div>
             
-        
+            <div class="nav-item">
+                
+                <a href="/archives" class="menu gt-a-link">
+                    归档
+                </a>
+                
+            </div>
             
-        
+            <div class="nav-item">
+                
+                <a href="/tags" class="menu gt-a-link">
+                    标签
+                </a>
+                
+            </div>
             
-        
+            <div class="nav-item">
+                
+                <a href="https://yfnwu.gitee.io/" class="menu gt-a-link" target="_blank">
+                    博客
+                </a>
+                
+            </div>
             
-        
-            
-        
-        <a href="https://yfnotes.now.sh/atom.xml" target="_blank"><i class="iconfont icon-rss"></i></a>
-    </div>
-</div>
-
-    <div class="header_menu">
-        
-            
-                <a href="/" class="menu">摘录</a>
-            
-        
-            
-                <a href="/archives" class="menu">归档</a>
-            
-        
-            
-                <a href="/tags" class="menu">标签</a>
-            
-        
-            
-                <a href="https://yfnwu.gitee.io/" class="menu" target="_blank">博客</a>
-            
-        
-        <div class="gridea-search-div">
-            <form id="gridea-search-form" action="https://yfnotes.now.sh/search/">
-                <input class="gridea-search-input" autocomplete="off" spellcheck="false" name="q"/>
+        </div>
+        <div style="text-align: center">
+            <form id="gridea-search-form" style="position: relative" data-update="1647759784404"
+                action="/search/">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+                <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
             </form>
         </div>
     </div>
+</nav>
+<script>
+    /* 移动端导航栏展开/收起切换 */
+    document.getElementById('changeNavbar').onclick = () => {
+        var element = document.getElementById('navbarSupportedContent');
+        if (element.style.display === 'none' || element.style.display === '') {
+            element.style.display = 'block';
+        } else {
+            element.style.display = 'none';
+        }
+    }
+</script>
 
-            <div class="autopagerize_page_element">
-                <div class="content">
-                    <div class="post_page">
-                        <div class="post animated fadeInDown">
-                            <div class="post_title post_detail_title">
-                                <h2>我为什么反对同理心</h2>
-                                <span class="article-info">
-                                    2020-05-08, 10321 words, 35 min read
-                                </span>
-                            </div>
-                            <div class="post_content markdown">
-                                <p class="md_block">
-                                    <span class="md_line md_line_start md_line_end">
-                                        <p><strong>文/Paul Bloom</strong></p>
+    <div class="post-container">
+        <div class="post-detail gt-bg-theme-color-second">
+            <article class="gt-post-content">
+                <h2 class="post-title">
+                    我为什么反对同理心
+                </h2>
+                <div class="post-info">
+                    <time class="post-time gt-c-content-color-first">
+                        · 2020-05-08 ·
+                    </time>
+                    
+                        <a href="https://yfnotes.now.sh/UYH-dufef/" class="post-tags">
+                            # 心理
+                        </a>
+                    
+                </div>
+                <div class="post-content">
+                    <p><strong>文/Paul Bloom</strong></p>
 <!-- more -->
 <p>有时候在社交场合朋友们出于礼貌会问我最近在干什么。我说：“我在写书。”出于礼貌他们又问我：“是什么题目的书呢？”我说：“题目是同理心。”我注意到每每当我提到这个题目的时候，他们的脸上都会挂起笑容，似乎这是一个很令人愉悦的题目。接下来我又说：“我反对同理心。”然后他们往往会紧张地轻笑两声，将目光转向一边。<strong>我意识到人们认为这种做法非常疯狂，反对同理心就好像反对世界和平或者反对小猫一样</strong>。但是我确实反对同理心，而且我希望我这次的讲座也能说服你们反对同理心。</p>
 <p>首先我们要解决术语问题。有些人用同理心来指代一切美好的事物，例如关怀、同情、善良、爱与道德。如果是那样的话，我对同理心毫无意见，这些显然都是好东西。事实上正是因为我认为这些事物都很美好，所以我才要反对同理心。人们有时候挂在嘴边的同理心指得是心理学领域所谓的<strong>社会认知</strong>或者说<strong>社交智力</strong>，也就是<strong>关于其他人心智运作的理论</strong>。此外还有<strong>认知同理心</strong>，即<strong>理解其他人当下思想与感受的能力</strong>。我对这一点有些看法。同理心固然能够帮助好人成为好人，毕竟想要成为好人就必须理解别人的需求与感受。但是同理心就像任何其他形式的智能一样<strong>本身与道德无关</strong>。例如诈骗犯、反社会者与教唆犯这样的坏人也会使用这种强大的力量来理解其他人的头脑，从而操纵利用他人。我所说的同理心是亚当.斯密在其著作《道德情操论》当中的定义。亚当.斯密认为，当我们看到其他人受苦时，“<strong>我们就会想象自己处于与他一样的境地……并且在一定程度上成为了他，因此以某种形式理解了他此刻的感受，感到了与他一样的痛苦，尽管在程度上比他要轻，但在本质上并无不同</strong>。”简而言之就是<strong>设身处地的想象</strong>。斯密举了很多例子。“当我们看到别人的肢体即将遭受打击时，我们自己的肢体也会忍不住瑟缩回撤。当打击的确降临的时候，我们难免也会感到有些隐痛，就像挨打的人感到疼痛一样。”</p>
@@ -108,59 +142,61 @@
 <p>亚当.斯密问道，成为好人需要什么？<strong>他并没有说你需要成为一个有感情的人</strong>。他列举了两件事：首先你必须要<strong>聪明</strong>，必须要有高人一等的<strong>理性</strong>与<strong>理解力</strong>。为什么？因为做能让你理解自己的行为会造成怎样的后果。如果你傻乎乎的，那你就不知道自己的行为会造成怎样的后果。其次你必须拥有<strong>自控能力</strong>。这样你才能做出你明知是正确的行为，而<strong>不至于受到诱惑作出立刻见效的行为</strong>。</p>
 <p>我们再来说说心理变态。衡量心理变态的标准，涉及人际关系情绪、生活方式与行为表现。心理学家 Jennifer Skeem 研究了所有这些事项，其中哪一条预测了不良行为。你可能会认为是冷漠无情、缺乏同理心。但是这一点几乎起不到任何作用。假如你要讲一大帮，疑似心理变态者从监狱中释放出去，并且要事先预测他们哪些人最有可能重返监狱。那么同理心测试一点儿效果也没有。那么哪些测试有预言效果呢？<strong>需要持续刺激、容易无聊、冲动、不负责任、行为不端</strong>，全都是亚当.斯密提到的特质。这样说来，<strong>邪恶的根源远远更倾向于缺乏自我控制而并非缺乏同理心</strong>。接下来还有心灵的问题人们经常引用大卫·休谟的言论，认为纯粹的理性并不足够。休谟认为“<strong>理性应当成为激情的奴隶</strong>”，我完全同意。你需要某些原因来激励你去做好事，<strong>单纯的收益分析并不足以激励你去做正确的事情</strong>。但是正如上面我所说，这一动机并不必是同理心不可，也可以是悲悯与同情。人们会用不同的方式来利用同理心，有些人可能会坚称这一术语应当被用于形容关心他人。对此我毫无意见，我不想进行术语细节的争论。我想说的是，无论你采用怎样的称谓，<strong>与他人感同身受都是道德错误，这会让我们成为更糟糕的人而不是更好的人</strong>。我们应当停止这种做法。</p>
 <p>谢谢！</p>
-<br />
-                                            
-                                </p>
-                            </div>
-                            <div class="post_footer">
-                                
-                                    <div class="meta">
-                                        <div class="info"><span class="field tags"><i class="iconfont icon-tag-sm"></i>
-                                                
-                                                    <a href="https://yfnotes.now.sh/UYH-dufef/" class="article-info">
-                                                        心理
-                                                    </a>
-                                                    
-                                            </span>
-                                        </div>
-                                    </div>
-                                    
-                                        
-                                            <div class="next-post" style="margin-top: 20px;">
-                                                <div class="next">下一篇</div>
-                                                <a href="https://yfnotes.now.sh/6/">
-                                                    <h3 class="post-title">
-                                                        窸窣
-                                                    </h3>
-                                                </a>
-                                            </div>
-                                            
-                            </div>
-                        </div>
-                        
-                    </div>
+
                 </div>
+            </article>
+        </div>
+
+        
+            <div class="next-post">
+                <div class="next gt-c-content-color-first">下一篇</div>
+                <a href="https://yfnotes.now.sh/6/" class="post-title gt-a-link">
+                    窸窣
+                </a>
             </div>
+        
+
+        
+
+        
+
+        
+
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first">我用一首歌穿越宇宙</div>
+    <div class="social-container">
+        
+            
+                <a href="https://github.com/yangfanbit" target="_blank">
+                    <i class="fab fa-github gt-c-content-color-first"></i>
+                </a>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
     </div>
-    <div class="footer">
-    
-    <div class="powered_by">
-        <a href="https://github.com/kytrun/gridea-theme-one" target="_blank">Theme One,</a>
-        <a href="https://gridea.dev/" target="_blank">Powered by Gridea&#65281;</a>
+    <div class="footer-info">
+        
     </div>
-    <div class="footer_slogan">
-        我用一首歌穿越宇宙
+    <div>
+        Theme <a href="https://github.com/imhanjie/gridea-theme-pure" target="_blank">Pure</a>, Powered by <a
+                href="https://gridea.dev" target="_blank">Gridea</a> | <a href="https://yfnotes.now.sh/atom.xml" target="_blank">RSS</a>
     </div>
-    <div id="back_to_top" class="back_to_top">
-        <span>△</span>
-    </div>
-    
 </div>
 
-<script src="https://yfnotes.now.sh/media/scripts/util.js"></script>
-        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/default.min.css">
-        <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js"></script>
-        <script>hljs.highlightAll();</script>
-</body>
+<script>
+  hljs.highlightAll()
+</script>
 
+    </div>
+</div>
+</body>
 </html>

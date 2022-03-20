@@ -1,142 +1,186 @@
-<!DOCTYPE html>
 <html>
-
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
 <title>人生 | Notes</title>
-<link rel="shortcut icon" href="https://yfnotes.now.sh/favicon.ico">
-<link href="https://yfnotes.now.sh/styles/main.css" rel="stylesheet">
-<link href="//at.alicdn.com/t/font_1678829_7cn41ho9lyt.css" rel="stylesheet">
-<link rel="alternate" type="application/rss+xml" title="Notes » Feed" href="https://yfnotes.now.sh/atom.xml">
+
+<link rel="shortcut icon" href="https://yfnotes.now.sh/favicon.ico?v=1647759784404">
+
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://yfnotes.now.sh/styles/main.css">
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css"> -->
+
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/9.12.0/languages/dockerfile.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/9.12.0/languages//dart.min.js"></script>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script> -->
+<!-- DEMO JS -->
+<!--<script src="media/scripts/index.js"></script>-->
+
+
+
 </head>
-
 <body>
-    <div class="main animated">
-        <div class="header animated fadeInDown">
-    <div class="site_title_container">
-        <div class="site_title">
-            <a href="https://yfnotes.now.sh">Notes</a>
+<div class="main gt-bg-theme-color-first">
+    <div class="main-content">
+        <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="/">
+        <img class="user-avatar" src="/images/avatar.png" alt="头像">
+        <div class="site-name gt-c-content-color-first">
+            Notes
         </div>
-    </div>
-    <div class="my_socials">
-        
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="changeNavbar">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
             
-                <a href="https://github.com/yangfanbit" target="_blank"><i class="iconfont icon-github"></i></a>
+            <div class="nav-item">
+                
+                <a href="/" class="menu gt-a-link">
+                    摘录
+                </a>
+                
+            </div>
             
-        
+            <div class="nav-item">
+                
+                <a href="/archives" class="menu gt-a-link">
+                    归档
+                </a>
+                
+            </div>
             
-        
+            <div class="nav-item">
+                
+                <a href="/tags" class="menu gt-a-link">
+                    标签
+                </a>
+                
+            </div>
             
-        
+            <div class="nav-item">
+                
+                <a href="https://yfnwu.gitee.io/" class="menu gt-a-link" target="_blank">
+                    博客
+                </a>
+                
+            </div>
             
-        
-            
-        
-        <a href="https://yfnotes.now.sh/atom.xml" target="_blank"><i class="iconfont icon-rss"></i></a>
-    </div>
-</div>
-
-    <div class="header_menu">
-        
-            
-                <a href="/" class="menu">摘录</a>
-            
-        
-            
-                <a href="/archives" class="menu">归档</a>
-            
-        
-            
-                <a href="/tags" class="menu">标签</a>
-            
-        
-            
-                <a href="https://yfnwu.gitee.io/" class="menu" target="_blank">博客</a>
-            
-        
-        <div class="gridea-search-div">
-            <form id="gridea-search-form" action="https://yfnotes.now.sh/search/">
-                <input class="gridea-search-input" autocomplete="off" spellcheck="false" name="q"/>
+        </div>
+        <div style="text-align: center">
+            <form id="gridea-search-form" style="position: relative" data-update="1647759784404"
+                action="/search/">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+                <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
             </form>
         </div>
     </div>
+</nav>
+<script>
+    /* 移动端导航栏展开/收起切换 */
+    document.getElementById('changeNavbar').onclick = () => {
+        var element = document.getElementById('navbarSupportedContent');
+        if (element.style.display === 'none' || element.style.display === '') {
+            element.style.display = 'block';
+        } else {
+            element.style.display = 'none';
+        }
+    }
+</script>
 
-            <div class="autopagerize_page_element">
-                <div class="content">
-                    
-                        <div class="post animated fadeInDown">
-                            <div class="post_title">
-                                <h2>
-                                    <a href="https://yfnotes.now.sh/4/">
-                                        许倬云访谈（节选）
-                                    </a>
-                                </h2>
-                            </div>
-                            <div class="list">
-                                <div class="post_content">
-                                    <p>
-                                        <p>我在大陆考古，每年走一个省，看了十年考古，很有益处，<strong>当场看的跟书上看的不一样</strong>。</p>
-
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="post_footer">
-                                <div class="meta">
-                                    <div class="info">
-                                        <div class="article-infos">
-                                            <i class="iconfont icon-words-sm"></i>
-                                            <span class="article-info">
-                                                14767
-                                            </span>
-                                            <i class="iconfont icon-calendar"></i>
-                                            <span class="article-info">
-                                                2020-05-03
-                                            </span>
-                                        </div>
-                                        
-                                            <span class="field tags"> <i class="iconfont icon-tag-sm"></i>
-                                                
-                                                    <a href="https://yfnotes.now.sh/pC78wYGcXX/" class="article-info">
-                                                        文化
-                                                    </a>
-                                                    
-                                                    <a href="https://yfnotes.now.sh/-nQEdr-moY/" class="article-info">
-                                                        人生
-                                                    </a>
-                                                    
-                                                    <a href="https://yfnotes.now.sh/IZKaiNCqtw/" class="article-info">
-                                                        教育
-                                                    </a>
-                                                    
-                                            </span>
-                                            
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+        <div class="current-tag-container">
+            <h2 class="title gt-c-content-color-first">
+                #人生
+            </h2>
+        </div>
+        <div class="post-list-container">
+    <div class="post-inner">
+        
+            <div class="post gt-bg-theme-color-second">
+                <div class="post-left">
+                    <div>
                         
+                        <a href="https://yfnotes.now.sh/4/">
+                            <span class="post-title gt-c-content-color-first">许倬云访谈（节选）</span>
+                        </a>
+                    </div>
+                    <div class="gt-post-content post-abstract gt-c-content-color-second">
+                        我在大陆考古，每年走一个省，看了十年考古，很有益处，当场看的跟书上看的不一样。
+
+                    </div>
+                    <div class="post-info">
+                        <time class="post-time gt-c-content-color-first">
+                            发布于 · 2020-05-03 ·
+                        </time>
+                        
+                            <a href="https://yfnotes.now.sh/pC78wYGcXX/" class="post-tag">
+                                # 文化
+                            </a>
+                        
+                            <a href="https://yfnotes.now.sh/-nQEdr-moY/" class="post-tag">
+                                # 人生
+                            </a>
+                        
+                            <a href="https://yfnotes.now.sh/IZKaiNCqtw/" class="post-tag">
+                                # 教育
+                            </a>
+                        
+                    </div>
                 </div>
+                
             </div>
-            
+        
     </div>
-    <div class="footer">
+</div>
+        <div class="pagination-container">
     
-    <div class="powered_by">
-        <a href="https://github.com/kytrun/gridea-theme-one" target="_blank">Theme One,</a>
-        <a href="https://gridea.dev/" target="_blank">Powered by Gridea&#65281;</a>
-    </div>
-    <div class="footer_slogan">
-        我用一首歌穿越宇宙
-    </div>
-    <div id="back_to_top" class="back_to_top">
-        <span>△</span>
-    </div>
     
 </div>
 
-<script src="https://yfnotes.now.sh/media/scripts/util.js"></script>
-</body>
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first">我用一首歌穿越宇宙</div>
+    <div class="social-container">
+        
+            
+                <a href="https://github.com/yangfanbit" target="_blank">
+                    <i class="fab fa-github gt-c-content-color-first"></i>
+                </a>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </div>
+    <div class="footer-info">
+        
+    </div>
+    <div>
+        Theme <a href="https://github.com/imhanjie/gridea-theme-pure" target="_blank">Pure</a>, Powered by <a
+                href="https://gridea.dev" target="_blank">Gridea</a> | <a href="https://yfnotes.now.sh/atom.xml" target="_blank">RSS</a>
+    </div>
+</div>
 
+<script>
+  hljs.highlightAll()
+</script>
+
+    </div>
+</div>
+</body>
 </html>

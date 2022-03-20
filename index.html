@@ -1,361 +1,360 @@
-<!DOCTYPE html>
 <html>
-
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
 <title>Notes</title>
-<link rel="shortcut icon" href="https://yfnotes.now.sh/favicon.ico">
-<link href="https://yfnotes.now.sh/styles/main.css" rel="stylesheet">
-<link href="//at.alicdn.com/t/font_1678829_7cn41ho9lyt.css" rel="stylesheet">
-<link rel="alternate" type="application/rss+xml" title="Notes » Feed" href="https://yfnotes.now.sh/atom.xml">
+
+<link rel="shortcut icon" href="https://yfnotes.now.sh/favicon.ico?v=1647759784404">
+
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://yfnotes.now.sh/styles/main.css">
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css"> -->
+
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/9.12.0/languages/dockerfile.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/9.12.0/languages//dart.min.js"></script>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script> -->
+<!-- DEMO JS -->
+<!--<script src="media/scripts/index.js"></script>-->
+
+
+
 </head>
-
 <body>
-<div class="main animated">
-    <div class="header animated fadeInDown">
-    <div class="site_title_container">
-        <div class="site_title">
-            <a href="https://yfnotes.now.sh">Notes</a>
+<div class="main gt-bg-theme-color-first">
+    <div class="main-content">
+        <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="/">
+        <img class="user-avatar" src="/images/avatar.png" alt="头像">
+        <div class="site-name gt-c-content-color-first">
+            Notes
         </div>
-    </div>
-    <div class="my_socials">
-        
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="changeNavbar">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
             
-                <a href="https://github.com/yangfanbit" target="_blank"><i class="iconfont icon-github"></i></a>
+            <div class="nav-item">
+                
+                <a href="/" class="menu gt-a-link">
+                    摘录
+                </a>
+                
+            </div>
             
-        
+            <div class="nav-item">
+                
+                <a href="/archives" class="menu gt-a-link">
+                    归档
+                </a>
+                
+            </div>
             
-        
+            <div class="nav-item">
+                
+                <a href="/tags" class="menu gt-a-link">
+                    标签
+                </a>
+                
+            </div>
             
-        
+            <div class="nav-item">
+                
+                <a href="https://yfnwu.gitee.io/" class="menu gt-a-link" target="_blank">
+                    博客
+                </a>
+                
+            </div>
             
-        
-            
-        
-        <a href="https://yfnotes.now.sh/atom.xml" target="_blank"><i class="iconfont icon-rss"></i></a>
-    </div>
-</div>
-
-    <div class="header_menu">
-        
-            
-                <a href="/" class="menu">摘录</a>
-            
-        
-            
-                <a href="/archives" class="menu">归档</a>
-            
-        
-            
-                <a href="/tags" class="menu">标签</a>
-            
-        
-            
-                <a href="https://yfnwu.gitee.io/" class="menu" target="_blank">博客</a>
-            
-        
-        <div class="gridea-search-div">
-            <form id="gridea-search-form" action="https://yfnotes.now.sh/search/">
-                <input class="gridea-search-input" autocomplete="off" spellcheck="false" name="q"/>
+        </div>
+        <div style="text-align: center">
+            <form id="gridea-search-form" style="position: relative" data-update="1647759784404"
+                action="/search/">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+                <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
             </form>
         </div>
     </div>
+</nav>
+<script>
+    /* 移动端导航栏展开/收起切换 */
+    document.getElementById('changeNavbar').onclick = () => {
+        var element = document.getElementById('navbarSupportedContent');
+        if (element.style.display === 'none' || element.style.display === '') {
+            element.style.display = 'block';
+        } else {
+            element.style.display = 'none';
+        }
+    }
+</script>
 
-    <div class="autopagerize_page_element">
-    
-        <div class="content">
-            <div class="post animated fadeInDown">
-                <div class="post_title">
-                    <h2>
+
+        <div class="post-list-container">
+    <div class="post-inner">
+        
+            <div class="post gt-bg-theme-color-second">
+                <div class="post-left">
+                    <div>
                         
-                        <a href="https://yfnotes.now.sh/7/">我为什么反对同理心</a>
-                    </h2>
-                </div>
-                <div class="list">
-                    <div class="post_content">
-                        <p><p><strong>文/Paul Bloom</strong></p>
-</p>
+                        <a href="https://yfnotes.now.sh/7/">
+                            <span class="post-title gt-c-content-color-first">我为什么反对同理心</span>
+                        </a>
                     </div>
-                </div>
-                <div class="post_footer">
-                    <div class="meta">
-                        <div class="info">
-                            <div class="article-infos">
-                                <i class="iconfont icon-words-sm"></i>
-                                <span class="article-info">10321</span>
-                                <i class="iconfont icon-calendar"></i>
-                                <span class="article-info">2020-05-08</span>
-                            </div>
-                            
-                                <span class="field tags"><i class="iconfont icon-tag-sm"></i>
-                                    
-                                        <a href="https://yfnotes.now.sh/UYH-dufef/" class="article-info">心理</a>
-                                    
-                                </span>
-                            
-                        </div>
+                    <div class="gt-post-content post-abstract gt-c-content-color-second">
+                        文/Paul Bloom
+
                     </div>
-                </div>
-            </div>
-        </div>
-    
-        <div class="content">
-            <div class="post animated fadeInDown">
-                <div class="post_title">
-                    <h2>
+                    <div class="post-info">
+                        <time class="post-time gt-c-content-color-first">
+                            发布于 · 2020-05-08 ·
+                        </time>
                         
-                        <a href="https://yfnotes.now.sh/6/">窸窣</a>
-                    </h2>
-                </div>
-                <div class="list">
-                    <div class="post_content">
-                        <p><ul>
-<li>“已有的事，后必再有；已行的事，后必再行。日光之下，并无新事。”<br>
-——《旧约·传道书》</li>
-</ul>
-</p>
-                    </div>
-                </div>
-                <div class="post_footer">
-                    <div class="meta">
-                        <div class="info">
-                            <div class="article-infos">
-                                <i class="iconfont icon-words-sm"></i>
-                                <span class="article-info">1292</span>
-                                <i class="iconfont icon-calendar"></i>
-                                <span class="article-info">2020-05-06</span>
-                            </div>
-                            
-                                <span class="field tags"><i class="iconfont icon-tag-sm"></i>
-                                    
-                                        <a href="https://yfnotes.now.sh/BDG-RFrTn/" class="article-info">摘书</a>
-                                    
-                                </span>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-        <div class="content">
-            <div class="post animated fadeInDown">
-                <div class="post_title">
-                    <h2>
+                            <a href="https://yfnotes.now.sh/UYH-dufef/" class="post-tag">
+                                # 心理
+                            </a>
                         
-                        <a href="https://yfnotes.now.sh/5/">Tips</a>
-                    </h2>
-                </div>
-                <div class="list">
-                    <div class="post_content">
-                        <p><ol>
-<li><strong>人们倾向于记住最先发生的事情和最后发生的事情</strong>。中间的事情记不清楚。所以，如果你要做自我介绍的话，最好做第一个或者最后一个。面试的时候，也是一样的。</li>
-</ol>
-</p>
                     </div>
                 </div>
-                <div class="post_footer">
-                    <div class="meta">
-                        <div class="info">
-                            <div class="article-infos">
-                                <i class="iconfont icon-words-sm"></i>
-                                <span class="article-info">3258</span>
-                                <i class="iconfont icon-calendar"></i>
-                                <span class="article-info">2020-05-04</span>
-                            </div>
-                            
-                                <span class="field tags"><i class="iconfont icon-tag-sm"></i>
-                                    
-                                        <a href="https://yfnotes.now.sh/QgF3Lixvr/" class="article-info">生活</a>
-                                    
-                                        <a href="https://yfnotes.now.sh/UYH-dufef/" class="article-info">心理</a>
-                                    
-                                </span>
-                            
-                        </div>
-                    </div>
-                </div>
+                
             </div>
-        </div>
-    
-        <div class="content">
-            <div class="post animated fadeInDown">
-                <div class="post_title">
-                    <h2>
+        
+            <div class="post gt-bg-theme-color-second">
+                <div class="post-left">
+                    <div>
                         
-                        <a href="https://yfnotes.now.sh/4/">许倬云访谈（节选）</a>
-                    </h2>
-                </div>
-                <div class="list">
-                    <div class="post_content">
-                        <p><p>我在大陆考古，每年走一个省，看了十年考古，很有益处，<strong>当场看的跟书上看的不一样</strong>。</p>
-</p>
+                        <a href="https://yfnotes.now.sh/6/">
+                            <span class="post-title gt-c-content-color-first">窸窣</span>
+                        </a>
                     </div>
-                </div>
-                <div class="post_footer">
-                    <div class="meta">
-                        <div class="info">
-                            <div class="article-infos">
-                                <i class="iconfont icon-words-sm"></i>
-                                <span class="article-info">14767</span>
-                                <i class="iconfont icon-calendar"></i>
-                                <span class="article-info">2020-05-03</span>
-                            </div>
-                            
-                                <span class="field tags"><i class="iconfont icon-tag-sm"></i>
-                                    
-                                        <a href="https://yfnotes.now.sh/pC78wYGcXX/" class="article-info">文化</a>
-                                    
-                                        <a href="https://yfnotes.now.sh/-nQEdr-moY/" class="article-info">人生</a>
-                                    
-                                        <a href="https://yfnotes.now.sh/IZKaiNCqtw/" class="article-info">教育</a>
-                                    
-                                </span>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-        <div class="content">
-            <div class="post animated fadeInDown">
-                <div class="post_title">
-                    <h2>
+                    <div class="gt-post-content post-abstract gt-c-content-color-second">
                         
-                        <a href="https://yfnotes.now.sh/3/">《太阳照常升起》梗概</a>
-                    </h2>
-                </div>
-                <div class="list">
-                    <div class="post_content">
-                        <p><h2 id="第一部">第一部</h2>
-<p>• 第一章<br>
-由 罗伯特·科恩 引出，弗朗西丝 关系，展现在巴黎生活。<br>
-饭店-咖啡-白兰地</p>
-</p>
+“已有的事，后必再有；已行的事，后必再行。日光之下，并无新事。”
+——《旧约·传道书》
+
+
                     </div>
-                </div>
-                <div class="post_footer">
-                    <div class="meta">
-                        <div class="info">
-                            <div class="article-infos">
-                                <i class="iconfont icon-words-sm"></i>
-                                <span class="article-info">1611</span>
-                                <i class="iconfont icon-calendar"></i>
-                                <span class="article-info">2020-05-02</span>
-                            </div>
-                            
-                                <span class="field tags"><i class="iconfont icon-tag-sm"></i>
-                                    
-                                        <a href="https://yfnotes.now.sh/zoL3bZpj0/" class="article-info">扒书</a>
-                                    
-                                </span>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-        <div class="content">
-            <div class="post animated fadeInDown">
-                <div class="post_title">
-                    <h2>
+                    <div class="post-info">
+                        <time class="post-time gt-c-content-color-first">
+                            发布于 · 2020-05-06 ·
+                        </time>
                         
-                        <a href="https://yfnotes.now.sh/2/">别怕动笔</a>
-                    </h2>
-                </div>
-                <div class="list">
-                    <div class="post_content">
-                        <p><p><strong>文/老舍</strong></p>
-<p>有不少初学写作的人感到苦恼：写不出来！<br>
-我的看法是：加紧学习，先别苦恼。<br>
-怎么学习呢？我看哪，第一步顶好是心中有什么就写什么，有多少就写多少。永远不敢动笔，就永远摸不着门儿。</p>
-</p>
-                    </div>
-                </div>
-                <div class="post_footer">
-                    <div class="meta">
-                        <div class="info">
-                            <div class="article-infos">
-                                <i class="iconfont icon-words-sm"></i>
-                                <span class="article-info">2299</span>
-                                <i class="iconfont icon-calendar"></i>
-                                <span class="article-info">2020-05-01</span>
-                            </div>
-                            
-                                <span class="field tags"><i class="iconfont icon-tag-sm"></i>
-                                    
-                                        <a href="https://yfnotes.now.sh/WJHjs5Q04/" class="article-info">好文</a>
-                                    
-                                        <a href="https://yfnotes.now.sh/DnsX2VV0w6/" class="article-info">写作</a>
-                                    
-                                </span>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-        <div class="content">
-            <div class="post animated fadeInDown">
-                <div class="post_title">
-                    <h2>
+                            <a href="https://yfnotes.now.sh/BDG-RFrTn/" class="post-tag">
+                                # 摘书
+                            </a>
                         
-                        <a href="https://yfnotes.now.sh/1/">行为上瘾</a>
-                    </h2>
-                </div>
-                <div class="list">
-                    <div class="post_content">
-                        <p><p>《Behavioral Game Design》<br>
-—— J.Hopson 2001</p>
-</p>
                     </div>
                 </div>
-                <div class="post_footer">
-                    <div class="meta">
-                        <div class="info">
-                            <div class="article-infos">
-                                <i class="iconfont icon-words-sm"></i>
-                                <span class="article-info">206</span>
-                                <i class="iconfont icon-calendar"></i>
-                                <span class="article-info">2020-04-30</span>
-                            </div>
-                            
-                                <span class="field tags"><i class="iconfont icon-tag-sm"></i>
-                                    
-                                        <a href="https://yfnotes.now.sh/UYH-dufef/" class="article-info">心理</a>
-                                    
-                                </span>
-                            
-                        </div>
-                    </div>
-                </div>
+                
             </div>
-        </div>
+        
+            <div class="post gt-bg-theme-color-second">
+                <div class="post-left">
+                    <div>
+                        
+                        <a href="https://yfnotes.now.sh/5/">
+                            <span class="post-title gt-c-content-color-first">Tips</span>
+                        </a>
+                    </div>
+                    <div class="gt-post-content post-abstract gt-c-content-color-second">
+                        
+人们倾向于记住最先发生的事情和最后发生的事情。中间的事情记不清楚。所以，如果你要做自我介绍的话，最好做第一个或者最后一个。面试的时候，也是一样的。
+
+
+                    </div>
+                    <div class="post-info">
+                        <time class="post-time gt-c-content-color-first">
+                            发布于 · 2020-05-04 ·
+                        </time>
+                        
+                            <a href="https://yfnotes.now.sh/QgF3Lixvr/" class="post-tag">
+                                # 生活
+                            </a>
+                        
+                            <a href="https://yfnotes.now.sh/UYH-dufef/" class="post-tag">
+                                # 心理
+                            </a>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        
+            <div class="post gt-bg-theme-color-second">
+                <div class="post-left">
+                    <div>
+                        
+                        <a href="https://yfnotes.now.sh/4/">
+                            <span class="post-title gt-c-content-color-first">许倬云访谈（节选）</span>
+                        </a>
+                    </div>
+                    <div class="gt-post-content post-abstract gt-c-content-color-second">
+                        我在大陆考古，每年走一个省，看了十年考古，很有益处，当场看的跟书上看的不一样。
+
+                    </div>
+                    <div class="post-info">
+                        <time class="post-time gt-c-content-color-first">
+                            发布于 · 2020-05-03 ·
+                        </time>
+                        
+                            <a href="https://yfnotes.now.sh/pC78wYGcXX/" class="post-tag">
+                                # 文化
+                            </a>
+                        
+                            <a href="https://yfnotes.now.sh/-nQEdr-moY/" class="post-tag">
+                                # 人生
+                            </a>
+                        
+                            <a href="https://yfnotes.now.sh/IZKaiNCqtw/" class="post-tag">
+                                # 教育
+                            </a>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        
+            <div class="post gt-bg-theme-color-second">
+                <div class="post-left">
+                    <div>
+                        
+                        <a href="https://yfnotes.now.sh/3/">
+                            <span class="post-title gt-c-content-color-first">《太阳照常升起》梗概</span>
+                        </a>
+                    </div>
+                    <div class="gt-post-content post-abstract gt-c-content-color-second">
+                        第一部
+• 第一章
+由 罗伯特·科恩 引出，弗朗西丝 关系，展现在巴黎生活。
+饭店-咖啡-白兰地
+
+                    </div>
+                    <div class="post-info">
+                        <time class="post-time gt-c-content-color-first">
+                            发布于 · 2020-05-02 ·
+                        </time>
+                        
+                            <a href="https://yfnotes.now.sh/zoL3bZpj0/" class="post-tag">
+                                # 扒书
+                            </a>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        
+            <div class="post gt-bg-theme-color-second">
+                <div class="post-left">
+                    <div>
+                        
+                        <a href="https://yfnotes.now.sh/2/">
+                            <span class="post-title gt-c-content-color-first">别怕动笔</span>
+                        </a>
+                    </div>
+                    <div class="gt-post-content post-abstract gt-c-content-color-second">
+                        文/老舍
+有不少初学写作的人感到苦恼：写不出来！
+我的看法是：加紧学习，先别苦恼。
+怎么学习呢？我看哪，第一步顶好是心中有什么就写什么，有多少就写多少。永远不敢动笔，就永远摸不着门儿。
+
+                    </div>
+                    <div class="post-info">
+                        <time class="post-time gt-c-content-color-first">
+                            发布于 · 2020-05-01 ·
+                        </time>
+                        
+                            <a href="https://yfnotes.now.sh/WJHjs5Q04/" class="post-tag">
+                                # 好文
+                            </a>
+                        
+                            <a href="https://yfnotes.now.sh/DnsX2VV0w6/" class="post-tag">
+                                # 写作
+                            </a>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        
+            <div class="post gt-bg-theme-color-second">
+                <div class="post-left">
+                    <div>
+                        
+                        <a href="https://yfnotes.now.sh/1/">
+                            <span class="post-title gt-c-content-color-first">行为上瘾</span>
+                        </a>
+                    </div>
+                    <div class="gt-post-content post-abstract gt-c-content-color-second">
+                        《Behavioral Game Design》
+—— J.Hopson 2001
+
+                    </div>
+                    <div class="post-info">
+                        <time class="post-time gt-c-content-color-first">
+                            发布于 · 2020-04-30 ·
+                        </time>
+                        
+                            <a href="https://yfnotes.now.sh/UYH-dufef/" class="post-tag">
+                                # 心理
+                            </a>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        
+    </div>
+</div>
+
+        <div class="pagination-container">
+    
     
 </div>
 
-</div>
-<div class="footer">
-    
-    <div class="powered_by">
-        <a href="https://github.com/kytrun/gridea-theme-one" target="_blank">Theme One,</a>
-        <a href="https://gridea.dev/" target="_blank">Powered by Gridea&#65281;</a>
+
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first">我用一首歌穿越宇宙</div>
+    <div class="social-container">
+        
+            
+                <a href="https://github.com/yangfanbit" target="_blank">
+                    <i class="fab fa-github gt-c-content-color-first"></i>
+                </a>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
     </div>
-    <div class="footer_slogan">
-        我用一首歌穿越宇宙
+    <div class="footer-info">
+        
     </div>
-    <div id="back_to_top" class="back_to_top">
-        <span>△</span>
+    <div>
+        Theme <a href="https://github.com/imhanjie/gridea-theme-pure" target="_blank">Pure</a>, Powered by <a
+                href="https://gridea.dev" target="_blank">Gridea</a> | <a href="https://yfnotes.now.sh/atom.xml" target="_blank">RSS</a>
     </div>
-    
 </div>
 
-<script src="https://yfnotes.now.sh/media/scripts/util.js"></script>
+<script>
+  hljs.highlightAll()
+</script>
+
+    </div>
+</div>
 </body>
-
 </html>
